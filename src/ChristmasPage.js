@@ -26,7 +26,7 @@ const ChristmasPage = ({ embedded }) => {
 
   return (
     <div className="christmas-page">
-      <h2>Prodotti di Natale</h2>
+      <h2 className="natale">Prodotti di Natale</h2>
       <div className="product-grid">
         {christmasProducts.map((product) => (
           <div key={product.id} className="product-card">

@@ -3,6 +3,13 @@
   padding: 20px;
   text-align: center;
 }
+.tutti {
+  font-size: 2.3em;
+  color: #1d11c7; /* Colore accattivante per il titolo */
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Testo in maiuscolo per enfasi */
+  letter-spacing: 1px; /* Spaziatura tra lettere per un aspetto più moderno */
+}
 
 .product-grid {
   display: inline-flex;

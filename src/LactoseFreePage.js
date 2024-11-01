@@ -25,7 +25,7 @@ const LactoseFreePage = ({ embedded }) => {
 
   return (
     <div className="lactose-free-page">
-      <h2>Prodotti Senza Lattosio</h2>
+      <h2 className="latte">Prodotti Senza Lattosio</h2>
       <div className="product-grid">
         {lactoseFreeProducts.map((product) => (
           <div key={product.id} className="product-card">

@@ -8,7 +8,7 @@ import LactoseFreePage from './LactoseFreePage';
 const AllProductsPage = () => {
   return (
     <div className="all-products-page">
-      <h1>Tutti i Prodotti</h1>
+      <h1 className="tutti">Tutti i Prodotti</h1>
       <div className="product-sections">
         {/* Passa la prop embedded */}
         <ChristmasPage embedded={true} />

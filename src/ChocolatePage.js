@@ -26,7 +26,7 @@ const ChocolatePage = ({ embedded }) => {
 
   return (
     <div className="chocolate-page">
-      <h2>Prodotti al Cioccolato</h2>
+      <h2 className="cioc">Prodotti al Cioccolato</h2>
       <div className="product-grid">
         {chocolates.map((chocolate) => (
           <div key={chocolate.id} className="product-card">
