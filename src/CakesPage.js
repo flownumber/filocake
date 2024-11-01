@@ -1,5 +1,4 @@
-// CakesPage.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CakesPage.css';
 
@@ -9,11 +8,14 @@ import tortaMeleImage from './img/torta-mele.jpg';
 
 const CakesPage = () => {
   const navigate = useNavigate(); // Crea una funzione di navigazione
+  const [hasNavigated, setHasNavigated] = useState(false); // Stato per tracciare il reindirizzamento
 
   useEffect(() => {
-    // Reindirizza a /filocake quando la pagina viene ricaricata
-    navigate('/filocake');
-  }, [navigate]);
+    if (!hasNavigated) {
+      setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
+      navigate('/filocake/'); // Reindirizza a /filocake
+    }
+  }, [navigate, hasNavigated]);
 
   const cakes = [
     { id: 1, name: 'Torta al Cioccolato', description: 'Squisita torta al cioccolato fondente.', price: '€30.00', image: tortaCioccolatoImage },

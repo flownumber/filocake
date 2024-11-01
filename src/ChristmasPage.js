@@ -1,5 +1,4 @@
-// ChristmasPage.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ChristmasPage.css';
 
@@ -9,11 +8,14 @@ import pandoroNataleImage from './img/pandoro-natale.jpg';
 
 const ChristmasPage = () => {
   const navigate = useNavigate(); // Crea una funzione di navigazione
+  const [hasNavigated, setHasNavigated] = useState(false); // Stato per tracciare il reindirizzamento
 
   useEffect(() => {
-    // Reindirizza a /filocake quando la pagina viene ricaricata
-    navigate('/filocake');
-  }, [navigate]);
+    if (!hasNavigated) {
+      setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
+      navigate('/filocake'); // Reindirizza a /filocake
+    }
+  }, [navigate, hasNavigated]);
 
   const christmasProducts = [
     { id: 1, name: 'Panettone Classico', description: 'Tradizionale panettone natalizio.', price: '€25.00', image: panettoneClassicoImage },

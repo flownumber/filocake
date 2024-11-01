@@ -1,5 +1,4 @@
-// ChocolatePage.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ChocolatePage.css';
 
@@ -9,11 +8,14 @@ import cioccolatiniImage from './img/cioccolatini.jpg';
 
 const ChocolatePage = () => {
   const navigate = useNavigate(); // Crea una funzione di navigazione
+  const [hasNavigated, setHasNavigated] = useState(false); // Stato per tracciare il reindirizzamento
 
   useEffect(() => {
-    // Reindirizza a /filocake quando la pagina viene ricaricata
-    navigate('/filocake');
-  }, [navigate]);
+    if (!hasNavigated) {
+      setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
+      navigate('/filocake/'); // Reindirizza a /filocake
+    }
+  }, [navigate, hasNavigated]);
 
   const chocolates = [
     { id: 1, name: 'Tavoletta di Cioccolato Fondente', description: 'Tavoletta di cioccolato fondente al 70%.', price: '€5.00', image: cioccolatoFondenteImage },

@@ -1,19 +1,21 @@
-// LactoseFreePage.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LactoseFreePage.css';
 
-// Importa le immagini usando il percorso corretto
+// Importa le immagini
 import biscottiSenzaLattosioImage from './img/biscotti-senza-lattosio.jpg';
 import tortaSenzaLattosioImage from './img/torta-senza-lattosio.jpg';
 
 const LactoseFreePage = () => {
   const navigate = useNavigate(); // Crea una funzione di navigazione
+  const [hasNavigated, setHasNavigated] = useState(false); // Stato per tracciare il reindirizzamento
 
   useEffect(() => {
-    // Reindirizza a /filocake quando la pagina viene ricaricata
-    navigate('/filocake');
-  }, [navigate]);
+    if (!hasNavigated) {
+      setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
+      navigate('/filocake'); // Reindirizza a /filocake
+    }
+  }, [navigate, hasNavigated]);
 
   const lactoseFreeProducts = [
     { id: 1, name: 'Biscotti Senza Lattosio', description: 'Deliziosi biscotti senza lattosio.', price: '€10.00', image: biscottiSenzaLattosioImage },
