@@ -6,16 +6,17 @@ import './CakesPage.css';
 import tortaCioccolatoImage from './img/torta-cioccolato.jpg';
 import tortaMeleImage from './img/torta-mele.jpg';
 
-const CakesPage = () => {
-  const navigate = useNavigate(); // Crea una funzione di navigazione
-  const [hasNavigated, setHasNavigated] = useState(false); // Stato per tracciare il reindirizzamento
+const CakesPage = ({ embedded }) => {
+  const navigate = useNavigate();
+  const [hasNavigated, setHasNavigated] = useState(false);
 
   useEffect(() => {
-    if (!hasNavigated) {
-      setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
-      navigate('/cakes/'); // Reindirizza a /filocake
+    // Esegui il reindirizzamento solo se non è integrato in AllProductsPage
+    if (!embedded && !hasNavigated) {
+      setHasNavigated(true);
+      navigate('/cakes');
     }
-  }, [navigate, hasNavigated]);
+  }, [navigate, hasNavigated, embedded]);
 
   const cakes = [
     { id: 1, name: 'Torta al Cioccolato', description: 'Squisita torta al cioccolato fondente.', price: '€30.00', image: tortaCioccolatoImage },

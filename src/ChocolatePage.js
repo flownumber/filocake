@@ -6,16 +6,17 @@ import './ChocolatePage.css';
 import cioccolatoFondenteImage from './img/cioccolato-fondente.jpg';
 import cioccolatiniImage from './img/cioccolatini.jpg';
 
-const ChocolatePage = () => {
-  const navigate = useNavigate(); // Crea una funzione di navigazione
-  const [hasNavigated, setHasNavigated] = useState(false); // Stato per tracciare il reindirizzamento
+const ChocolatePage = ({ embedded }) => {
+  const navigate = useNavigate();
+  const [hasNavigated, setHasNavigated] = useState(false);
 
   useEffect(() => {
-    if (!hasNavigated) {
-      setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
-      navigate('/chocolate/'); // Reindirizza a /filocake
+    // Esegui il reindirizzamento solo se non è integrato in AllProductsPage
+    if (!embedded && !hasNavigated) {
+      setHasNavigated(true);
+      navigate('/chocolate');
     }
-  }, [navigate, hasNavigated]);
+  }, [navigate, hasNavigated, embedded]);
 
   const chocolates = [
     { id: 1, name: 'Tavoletta di Cioccolato Fondente', description: 'Tavoletta di cioccolato fondente al 70%.', price: '€5.00', image: cioccolatoFondenteImage },

@@ -6,16 +6,17 @@ import './LactoseFreePage.css';
 import biscottiSenzaLattosioImage from './img/biscotti-senza-lattosio.jpg';
 import tortaSenzaLattosioImage from './img/torta-senza-lattosio.jpg';
 
-const LactoseFreePage = () => {
-  const navigate = useNavigate(); // Crea una funzione di navigazione
-  const [hasNavigated, setHasNavigated] = useState(false); // Stato per tracciare il reindirizzamento
+const LactoseFreePage = ({ embedded }) => {
+  const navigate = useNavigate();
+  const [hasNavigated, setHasNavigated] = useState(false);
 
   useEffect(() => {
-    if (!hasNavigated) {
-      setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
-      navigate('/lactose-free/'); // Reindirizza a /filocake
+    // Esegui il reindirizzamento solo se il componente non è integrato in un'altra pagina
+    if (!embedded && !hasNavigated) {
+      setHasNavigated(true);
+      navigate('/lactose-free');
     }
-  }, [navigate, hasNavigated]);
+  }, [navigate, hasNavigated, embedded]);
 
   const lactoseFreeProducts = [
     { id: 1, name: 'Biscotti Senza Lattosio', description: 'Deliziosi biscotti senza lattosio.', price: '€10.00', image: biscottiSenzaLattosioImage },
@@ -37,6 +38,6 @@ const LactoseFreePage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default LactoseFreePage;

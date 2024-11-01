@@ -6,16 +6,17 @@ import './ChristmasPage.css';
 import panettoneClassicoImage from './img/panettone-classico.jpg';
 import pandoroNataleImage from './img/pandoro-natale.jpg';
 
-const ChristmasPage = () => {
-  const navigate = useNavigate(); // Crea una funzione di navigazione
-  const [hasNavigated, setHasNavigated] = useState(false); // Stato per tracciare il reindirizzamento
+const ChristmasPage = ({ embedded }) => {
+  const navigate = useNavigate();
+  const [hasNavigated, setHasNavigated] = useState(false);
 
   useEffect(() => {
-    if (!hasNavigated) {
-      setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
-      navigate('/christmas/'); // Reindirizza a /filocake
+    // Esegui il reindirizzamento solo se il componente non è integrato in un'altra pagina
+    if (!embedded && !hasNavigated) {
+      setHasNavigated(true);
+      navigate('/christmas');
     }
-  }, [navigate, hasNavigated]);
+  }, [navigate, hasNavigated, embedded]);
 
   const christmasProducts = [
     { id: 1, name: 'Panettone Classico', description: 'Tradizionale panettone natalizio.', price: '€25.00', image: panettoneClassicoImage },
@@ -38,6 +39,6 @@ const ChristmasPage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ChristmasPage;
