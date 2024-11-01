@@ -2,6 +2,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
+import Intro from './Intro';
+import Products from './Products';
+import OrderForm from './OrderForm';
 import Footer from './Footer';
 import App from './App'; // Homepage principale
 import AllProductsPage from './AllProductsPage'; // Pagina per tutti i prodotti
@@ -14,6 +17,8 @@ function Main() {
   return (
     <Router>
       <Header />
+      <Intro />
+      <Products />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/all-products" element={<AllProductsPage />} />
@@ -22,6 +27,7 @@ function Main() {
         <Route path="/chocolate" element={<ChocolatePage />} />
         <Route path="/lactose-free" element={<LactoseFreePage />} />
       </Routes>
+      <OrderForm />
       <Footer />
     </Router>
   );
