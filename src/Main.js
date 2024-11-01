@@ -6,7 +6,6 @@ import Intro from './Intro';
 import Products from './Products';
 import OrderForm from './OrderForm';
 import Footer from './Footer';
-import App from './App'; // Homepage principale
 import AllProductsPage from './AllProductsPage'; // Pagina per tutti i prodotti
 import ChristmasPage from './ChristmasPage'; // Nuova pagina di Natale
 import CakesPage from './CakesPage'; // Nuova pagina di Torte
@@ -20,7 +19,6 @@ function Main() {
       <Intro />
       <Products />
       <Routes>
-        <Route path="/" element={<App />} />
         <Route path="/all-products" element={<AllProductsPage />} />
         <Route path="/christmas" element={<ChristmasPage />} />
         <Route path="/cakes" element={<CakesPage />} />
