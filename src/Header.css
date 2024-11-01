@@ -91,6 +91,7 @@
   .header {
     flex-direction: column; /* Imposta il layout in colonna su schermi piccoli */
     align-items: flex-start; /* Allinea gli elementi a sinistra */
+    border-radius: 0.1em 0.1em 0.6em 0.6em;
   }
 
   .header-logo {
