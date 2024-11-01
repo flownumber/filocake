@@ -36,7 +36,7 @@
 
 /* Pulsante del menu */
 .menu-button {
-  background-color: #5e88c7;
+  background-color: #1d65d1f5;
   color: white;
   border: none;
   padding: 0.5em 1em; /* Padding per un'area cliccabile migliore */
@@ -115,6 +115,6 @@
   .menu-button {
     width: 30%; /* Pulsante occupa tutta la larghezza disponibile */
     text-align: center; /* Centra il testo */
-    margin-top: -4.5em;
+    margin-top: -4.6em;
   }
 }
