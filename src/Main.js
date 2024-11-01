@@ -19,11 +19,11 @@ function Main() {
       <Intro />
       <Products />
       <Routes>
-        <Route path="/all-products" element={<AllProductsPage />} />
-        <Route path="/christmas" element={<ChristmasPage />} />
-        <Route path="/cakes" element={<CakesPage />} />
-        <Route path="/chocolate" element={<ChocolatePage />} />
-        <Route path="/lactose-free" element={<LactoseFreePage />} />
+        <Route path="/all-products/" element={<AllProductsPage />} />
+        <Route path="/christmas/" element={<ChristmasPage />} />
+        <Route path="/cakes/" element={<CakesPage />} />
+        <Route path="/chocolate/" element={<ChocolatePage />} />
+        <Route path="/lactose-free/" element={<LactoseFreePage />} />
       </Routes>
       <OrderForm />
       <Footer />
