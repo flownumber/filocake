@@ -50,12 +50,14 @@
   display: none; /* Nascondi il menu di default */
   flex-direction: column; /* Imposta la direzione del menu in colonna */
   position: absolute; /* Posiziona il menu sopra gli altri contenuti */
-  top: 60px; /* Posiziona il menu sotto il header */
+  top: 6.5em; /* Posiziona il menu sotto il header */
   left: 0;
-  width: 100%; /* Larghezza del menu */
-  background: white; /* Sfondo del menu */
+  width: 50%; /* Larghezza del menu */
+  background: #9fa9e5; /* Sfondo del menu */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000; /* Assicurati che il menu sia sopra altri contenuti */
+  border-radius: 1em;
+  margin-left: 58em;
 }
 
 .nav-menu.open {
