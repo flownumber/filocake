@@ -99,6 +99,7 @@
 
   .nav-menu {
     width: 100%; /* Larghezza del menu su schermi piccoli */
+    margin-left: 0;
   }
 
   .header-logo h1 {
