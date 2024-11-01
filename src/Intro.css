@@ -21,7 +21,7 @@
 
 .carousel-track {
   display: flex;
-  animation: scroll 50s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
 .carousel-track img {
