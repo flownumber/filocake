@@ -4,8 +4,8 @@ import './CakesPage.css';
 
 const CakesPage = () => {
   const cakes = [
-    { id: 1, name: 'Torta al Cioccolato', description: 'Squisita torta al cioccolato fondente.', price: '€30.00', image: 'img/torta-cioccolato.jpg' },
-    { id: 2, name: 'Torta di Mele', description: 'Classica torta di mele con pasta frolla.', price: '€28.00', image: 'img/torta-mele.jpg' },
+    { id: 1, name: 'Torta al Cioccolato', description: 'Squisita torta al cioccolato fondente.', price: '€30.00', image: '/img/torta-cioccolato.jpg' },
+    { id: 2, name: 'Torta di Mele', description: 'Classica torta di mele con pasta frolla.', price: '€28.00', image: '/img/torta-mele.jpg' },
     // Aggiungi altre torte
   ];
 
