@@ -13,7 +13,7 @@ const ChristmasPage = () => {
   useEffect(() => {
     if (!hasNavigated) {
       setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
-      navigate('/filocake'); // Reindirizza a /filocake
+      navigate('/christmas/'); // Reindirizza a /filocake
     }
   }, [navigate, hasNavigated]);
 

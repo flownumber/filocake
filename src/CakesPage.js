@@ -13,7 +13,7 @@ const CakesPage = () => {
   useEffect(() => {
     if (!hasNavigated) {
       setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
-      navigate('/filocake/'); // Reindirizza a /filocake
+      navigate('/cakes/'); // Reindirizza a /filocake
     }
   }, [navigate, hasNavigated]);
 

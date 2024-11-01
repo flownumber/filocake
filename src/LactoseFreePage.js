@@ -13,7 +13,7 @@ const LactoseFreePage = () => {
   useEffect(() => {
     if (!hasNavigated) {
       setHasNavigated(true); // Imposta lo stato per evitare reindirizzamenti futuri
-      navigate('/filocake'); // Reindirizza a /filocake
+      navigate('/lactose-free/'); // Reindirizza a /filocake
     }
   }, [navigate, hasNavigated]);
 
