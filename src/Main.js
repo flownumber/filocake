@@ -17,7 +17,6 @@ function Main() {
     <Router>
       <Header />
       <Intro />
-      <Products />
       <Routes>
         <Route path="/all-products/" element={<AllProductsPage />} />
         <Route path="/christmas/" element={<ChristmasPage />} />
@@ -25,6 +24,7 @@ function Main() {
         <Route path="/chocolate/" element={<ChocolatePage />} />
         <Route path="/lactose-free/" element={<LactoseFreePage />} />
       </Routes>
+      <Products />
       <OrderForm />
       <Footer />
     </Router>
