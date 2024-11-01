@@ -1,23 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import './ChristmasPage.css';
 
 // Importa le immagini
 import panettoneClassicoImage from './img/panettone-classico.jpg';
 import pandoroNataleImage from './img/pandoro-natale.jpg';
 
-const ChristmasPage = ({ embedded }) => {
-  const navigate = useNavigate();
-  const [hasNavigated, setHasNavigated] = useState(false);
-
-  useEffect(() => {
-    // Esegui il reindirizzamento solo se il componente non è integrato in un'altra pagina
-    if (!embedded && !hasNavigated) {
-      setHasNavigated(true);
-      navigate('/christmas/');
-    }
-  }, [navigate, hasNavigated, embedded]);
-
+const ChristmasPage = () => {
   const christmasProducts = [
     { id: 1, name: 'Panettone Classico', description: 'Tradizionale panettone natalizio.', price: '€25.00', image: panettoneClassicoImage },
     { id: 2, name: 'Pandoro di Natale', description: 'Delizioso pandoro decorato per le feste.', price: '€20.00', image: pandoroNataleImage },

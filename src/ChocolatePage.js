@@ -1,23 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import './ChocolatePage.css';
 
 // Importa le immagini
 import cioccolatoFondenteImage from './img/cioccolato-fondente.jpg';
 import cioccolatiniImage from './img/cioccolatini.jpg';
 
-const ChocolatePage = ({ embedded }) => {
-  const navigate = useNavigate();
-  const [hasNavigated, setHasNavigated] = useState(false);
-
-  useEffect(() => {
-    // Esegui il reindirizzamento solo se non è integrato in AllProductsPage
-    if (!embedded && !hasNavigated) {
-      setHasNavigated(true);
-      navigate('/chocolate/');
-    }
-  }, [navigate, hasNavigated, embedded]);
-
+const ChocolatePage = () => {
   const chocolates = [
     { id: 1, name: 'Tavoletta di Cioccolato Fondente', description: 'Tavoletta di cioccolato fondente al 70%.', price: '€5.00', image: cioccolatoFondenteImage },
     { id: 2, name: 'Cioccolatini Assortiti', description: 'Assortimento di cioccolatini artigianali.', price: '€15.00', image: cioccolatiniImage },
@@ -39,6 +27,6 @@ const ChocolatePage = ({ embedded }) => {
       </div>
     </div>
   );
-}
+};
 
 export default ChocolatePage;

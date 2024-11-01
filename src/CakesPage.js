@@ -1,23 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import './CakesPage.css';
 
 // Importa le immagini
 import tortaCioccolatoImage from './img/torta-cioccolato.jpg';
 import tortaMeleImage from './img/torta-mele.jpg';
 
-const CakesPage = ({ embedded }) => {
-  const navigate = useNavigate();
-  const [hasNavigated, setHasNavigated] = useState(false);
-
-  useEffect(() => {
-    // Esegui il reindirizzamento solo se non è integrato in AllProductsPage
-    if (!embedded && !hasNavigated) {
-      setHasNavigated(true);
-      navigate('/cakes/');
-    }
-  }, [navigate, hasNavigated, embedded]);
-
+const CakesPage = () => {
   const cakes = [
     { id: 1, name: 'Torta al Cioccolato', description: 'Squisita torta al cioccolato fondente.', price: '€30.00', image: tortaCioccolatoImage },
     { id: 2, name: 'Torta di Mele', description: 'Classica torta di mele con pasta frolla.', price: '€28.00', image: tortaMeleImage },
@@ -39,6 +27,6 @@ const CakesPage = ({ embedded }) => {
       </div>
     </div>
   );
-}
+};
 
 export default CakesPage;

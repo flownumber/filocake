@@ -11,10 +11,10 @@ const AllProductsPage = () => {
       <h1 className="tutti">Tutti i Prodotti</h1>
       <div className="product-sections">
         {/* Passa la prop embedded */}
-        <ChristmasPage embedded={true} />
-        <CakesPage embedded={true} />
-        <ChocolatePage embedded={true} />
-        <LactoseFreePage embedded={true} />
+        <ChristmasPage />
+        <CakesPage />
+        <ChocolatePage/>
+        <LactoseFreePage />
       </div>
     </div>
   );
