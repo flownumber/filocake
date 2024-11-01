@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/filocake/static/css/main.64e7ae45.css",
-    "main.js": "/filocake/static/js/main.8ebcb08b.js",
+    "main.js": "/filocake/static/js/main.4277ddd6.js",
+    "static/media/biscotti-senza-lattosio.jpg": "/filocake/static/media/biscotti-senza-lattosio.015a357309d826b18bff.jpg",
+    "static/media/torta-senza-lattosio.jpg": "/filocake/static/media/torta-senza-lattosio.015a357309d826b18bff.jpg",
     "static/media/logo.png": "/filocake/static/media/logo.8fb45d36366e93713360.png",
     "index.html": "/filocake/index.html",
     "main.64e7ae45.css.map": "/filocake/static/css/main.64e7ae45.css.map",
-    "main.8ebcb08b.js.map": "/filocake/static/js/main.8ebcb08b.js.map"
+    "main.4277ddd6.js.map": "/filocake/static/js/main.4277ddd6.js.map"
   },
   "entrypoints": [
     "static/css/main.64e7ae45.css",
-    "static/js/main.8ebcb08b.js"
+    "static/js/main.4277ddd6.js"
   ]
 }
