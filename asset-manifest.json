@@ -1,16 +1,22 @@
 {
   "files": {
     "main.css": "/filocake/static/css/main.64e7ae45.css",
-    "main.js": "/filocake/static/js/main.4277ddd6.js",
+    "main.js": "/filocake/static/js/main.91548efe.js",
     "static/media/biscotti-senza-lattosio.jpg": "/filocake/static/media/biscotti-senza-lattosio.015a357309d826b18bff.jpg",
+    "static/media/cioccolatini.jpg": "/filocake/static/media/cioccolatini.015a357309d826b18bff.jpg",
+    "static/media/cioccolato-fondente.jpg": "/filocake/static/media/cioccolato-fondente.015a357309d826b18bff.jpg",
     "static/media/torta-senza-lattosio.jpg": "/filocake/static/media/torta-senza-lattosio.015a357309d826b18bff.jpg",
     "static/media/logo.png": "/filocake/static/media/logo.8fb45d36366e93713360.png",
+    "static/media/torta-mele.jpg": "/filocake/static/media/torta-mele.7f7bba820312b56dc986.jpg",
+    "static/media/panettone-classico.jpg": "/filocake/static/media/panettone-classico.dcbfd2ac5eeada0f917a.jpg",
+    "static/media/torta-cioccolato.jpg": "/filocake/static/media/torta-cioccolato.70b731a845b3637febde.jpg",
+    "static/media/pandoro-natale.jpg": "/filocake/static/media/pandoro-natale.b5b03aaa5b8de67861c1.jpg",
     "index.html": "/filocake/index.html",
     "main.64e7ae45.css.map": "/filocake/static/css/main.64e7ae45.css.map",
-    "main.4277ddd6.js.map": "/filocake/static/js/main.4277ddd6.js.map"
+    "main.91548efe.js.map": "/filocake/static/js/main.91548efe.js.map"
   },
   "entrypoints": [
     "static/css/main.64e7ae45.css",
-    "static/js/main.4277ddd6.js"
+    "static/js/main.91548efe.js"
   ]
 }
