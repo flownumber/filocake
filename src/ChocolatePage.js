@@ -1,5 +1,6 @@
 // ChocolatePage.js
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ChocolatePage.css';
 
 // Importa le immagini
@@ -7,6 +8,13 @@ import cioccolatoFondenteImage from './img/cioccolato-fondente.jpg';
 import cioccolatiniImage from './img/cioccolatini.jpg';
 
 const ChocolatePage = () => {
+  const navigate = useNavigate(); // Crea una funzione di navigazione
+
+  useEffect(() => {
+    // Reindirizza a /filocake quando la pagina viene ricaricata
+    navigate('/filocake');
+  }, [navigate]);
+
   const chocolates = [
     { id: 1, name: 'Tavoletta di Cioccolato Fondente', description: 'Tavoletta di cioccolato fondente al 70%.', price: '€5.00', image: cioccolatoFondenteImage },
     { id: 2, name: 'Cioccolatini Assortiti', description: 'Assortimento di cioccolatini artigianali.', price: '€15.00', image: cioccolatiniImage },
