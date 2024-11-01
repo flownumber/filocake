@@ -12,7 +12,7 @@ const AllProductsPage = () => {
   useEffect(() => {
     // Reindirizza all'URL appropriato a seconda della pagina attuale
     const path = window.location.pathname; // Ottieni il percorso corrente
-    if (path === '/cakes/') {
+    if (path === '/all-products/') {
       navigate('/cakes/');
     } else if (path === '/chocolate/') {
       navigate('/chocolate/');
