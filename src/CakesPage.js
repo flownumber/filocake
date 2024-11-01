@@ -14,7 +14,7 @@ const CakesPage = ({ embedded }) => {
     // Esegui il reindirizzamento solo se non è integrato in AllProductsPage
     if (!embedded && !hasNavigated) {
       setHasNavigated(true);
-      navigate('/cakes');
+      navigate('/cakes/');
     }
   }, [navigate, hasNavigated, embedded]);
 

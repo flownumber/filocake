@@ -14,7 +14,7 @@ const ChristmasPage = ({ embedded }) => {
     // Esegui il reindirizzamento solo se il componente non è integrato in un'altra pagina
     if (!embedded && !hasNavigated) {
       setHasNavigated(true);
-      navigate('/christmas');
+      navigate('/christmas/');
     }
   }, [navigate, hasNavigated, embedded]);
 

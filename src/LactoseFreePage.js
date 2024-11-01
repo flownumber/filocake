@@ -14,7 +14,7 @@ const LactoseFreePage = ({ embedded }) => {
     // Esegui il reindirizzamento solo se il componente non è integrato in un'altra pagina
     if (!embedded && !hasNavigated) {
       setHasNavigated(true);
-      navigate('/lactose-free');
+      navigate('/lactose-free/');
     }
   }, [navigate, hasNavigated, embedded]);
 

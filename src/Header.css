@@ -5,21 +5,21 @@
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Mantiene spazio tra logo e pulsante */
+  justify-content: space-between; /* Spazio tra logo, titolo e pulsante */
   padding: 0.5em 1em;
   background: linear-gradient(163deg, #94c6df, #81edf3, #7cc3ed, #edb7eb, #af7bb5);
-  box-shadow: 10px 4px 8px 10px rgba(194, 90, 90, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.1em 0.1em 1em 1em;
 }
 
-/* Logo */
+/* Logo e Titolo */
 .header-logo {
   display: flex;
   align-items: center;
 }
 
 .logo-img {
-  width: 5.5em;
+  width: 3em;
   height: auto;
   margin-right: 0.5em;
 }
@@ -27,37 +27,39 @@
 .header-logo h1 {
   margin: 0;
   color: rgb(22, 14, 121);
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
   font-family: cursive;
   font-style: normal;
   transform: skew(343deg);
+  margin-left: 2em;
+  margin-top: -1.7em;
 }
 
 /* Pulsante del menu */
 .menu-button {
-  background-color: #1d65d1f5;
+  background-color: #1d65d1;
   color: white;
   border: none;
-  padding: 0.5em 1em; /* Padding per un'area cliccabile migliore */
+  padding: 0.5em 1em;
   border-radius: 0.5em;
   cursor: pointer;
-  margin-left: auto; /* Questo permette al pulsante di spostarsi a destra */
+  text-align: center;
 }
 
 /* Navigazione */
 .nav-menu {
   display: none; /* Nascondi il menu di default */
-  flex-direction: column; /* Imposta la direzione del menu in colonna */
-  position: absolute; /* Posiziona il menu sopra gli altri contenuti */
-  top: 6.5em; /* Posiziona il menu sotto il header */
-  left: 0;
-  width: 50%; /* Larghezza del menu */
+  flex-direction: column;
+  position: absolute;
+  top: 4em;
+  right: 1em;
+  width: 200px;
   background: linear-gradient(179deg, #afdef5, #8bdadf, #9ccbe7);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Assicurati che il menu sia sopra altri contenuti */
-  border-radius: 1em;
-  margin-left: 58em;
+  z-index: 1000;
+  border-radius: 0.5em;
+  padding: 1em 0;
 }
 
 .nav-menu.open {
@@ -71,50 +73,49 @@
   padding: 0;
 }
 
-/* Link */
 .nav-menu a {
-  color: rgb(4 4 4 / 92%);
+  color: rgb(4, 4, 4, 0.92);
   text-decoration: none;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: 500;
-  padding: 0.5em 1em; /* Aggiungi padding per migliorare la cliccabilità */
-  display: block; /* Rendi i link a blocchi per coprire l'intera area */
+  padding: 0.5em 1em;
+  display: block;
   transition: background 0.3s ease;
 }
 
 .nav-menu a:hover {
-  background: #e0e0e0; /* Cambia colore di sfondo al passaggio del mouse */
+  background: #e0e0e0;
 }
 
 /* Media Queries per dispositivi mobili */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* Imposta il layout in colonna su schermi piccoli */
-    align-items: flex-start; /* Allinea gli elementi a sinistra */
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
     border-radius: 0.1em 0.1em 0.6em 0.6em;
   }
 
   .header-logo {
-    margin-bottom: 0.5em; /* Aggiungi margine sotto il logo */
+    flex: 1;
+    justify-content: flex-start;
   }
 
   .nav-menu {
-    width: 100%; /* Larghezza del menu su schermi piccoli */
-    margin-left: 0;
-    background: linear-gradient(179deg, #afdef5, #8bdadf, #9ccbe7);
+    width: 90%;
+    top: 4.5em;
+    right: 5%;
   }
 
   .header-logo h1 {
-    font-size: 1.5em; /* Dimensione del font per schermi più piccoli */
+    font-size: 1.5em;
   }
 
   .nav-menu a {
-    font-size: 1.2em; /* Dimensione del font per i link */
+    font-size: 1.1em;
   }
 
   .menu-button {
-    width: 30%; /* Pulsante occupa tutta la larghezza disponibile */
-    text-align: center; /* Centra il testo */
-    margin-top: -4.6em;
+    padding: 0.5em;
   }
 }

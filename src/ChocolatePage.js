@@ -14,7 +14,7 @@ const ChocolatePage = ({ embedded }) => {
     // Esegui il reindirizzamento solo se non è integrato in AllProductsPage
     if (!embedded && !hasNavigated) {
       setHasNavigated(true);
-      navigate('/chocolate');
+      navigate('/chocolate/');
     }
   }, [navigate, hasNavigated, embedded]);
 
