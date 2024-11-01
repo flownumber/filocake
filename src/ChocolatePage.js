@@ -2,14 +2,10 @@
 import React from 'react';
 import './ChocolatePage.css';
 
-// Importa le immagini
-import chocolateFondenteImage from './img/cioccolato-fondente.jpg';
-import cioccolatiniImage from './img/cioccolatini.jpg';
-
 const ChocolatePage = () => {
   const chocolates = [
-    { id: 1, name: 'Tavoletta di Cioccolato Fondente', description: 'Tavoletta di cioccolato fondente al 70%.', price: '€5.00', image: chocolateFondenteImage },
-    { id: 2, name: 'Cioccolatini Assortiti', description: 'Assortimento di cioccolatini artigianali.', price: '€15.00', image: cioccolatiniImage },
+    { id: 1, name: 'Tavoletta di Cioccolato Fondente', description: 'Tavoletta di cioccolato fondente al 70%.', price: '€5.00', image: './img/cioccolato-fondente.jpg' },
+    { id: 2, name: 'Cioccolatini Assortiti', description: 'Assortimento di cioccolatini artigianali.', price: '€15.00', image: './img/cioccolatini.jpg' },
     // Aggiungi altri cioccolati
   ];
 

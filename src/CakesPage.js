@@ -2,14 +2,10 @@
 import React from 'react';
 import './CakesPage.css';
 
-// Importa le immagini
-import tortaCioccolatoImage from './img/torta-cioccolato.jpg';
-import tortaMeleImage from './img/torta-mele.jpg';
-
 const CakesPage = () => {
   const cakes = [
-    { id: 1, name: 'Torta al Cioccolato', description: 'Squisita torta al cioccolato fondente.', price: '€30.00', image: tortaCioccolatoImage },
-    { id: 2, name: 'Torta di Mele', description: 'Classica torta di mele con pasta frolla.', price: '€28.00', image: tortaMeleImage },
+    { id: 1, name: 'Torta al Cioccolato', description: 'Squisita torta al cioccolato fondente.', price: '€30.00', image: 'img/torta-cioccolato.jpg' },
+    { id: 2, name: 'Torta di Mele', description: 'Classica torta di mele con pasta frolla.', price: '€28.00', image: 'img/torta-mele.jpg' },
     // Aggiungi altre torte
   ];
 
