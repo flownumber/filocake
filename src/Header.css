@@ -1,0 +1,115 @@
+/* Header.css */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Mantiene spazio tra logo e pulsante */
+  padding: 0.5em 1em;
+  background: linear-gradient(to right, #94c6df99, #81edf37d, #7cc3eda6, #edb7eba1, #af7bb58c, #dae3ae91);
+  box-shadow: 10px 4px 8px 10px rgba(194, 90, 90, 0.1);
+  border-radius: 0.1em 0.1em 1em 1em;
+}
+
+/* Logo */
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 5.5em;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+.header-logo h1 {
+  margin: 0;
+  color: rgb(22, 14, 121);
+  font-size: 2em;
+  font-weight: bold;
+  font-family: cursive;
+  font-style: normal;
+  transform: skew(343deg);
+}
+
+/* Pulsante del menu */
+.menu-button {
+  background-color: #5e88c7;
+  color: white;
+  border: none;
+  padding: 0.5em 1em; /* Padding per un'area cliccabile migliore */
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-left: auto; /* Questo permette al pulsante di spostarsi a destra */
+}
+
+/* Navigazione */
+.nav-menu {
+  display: none; /* Nascondi il menu di default */
+  flex-direction: column; /* Imposta la direzione del menu in colonna */
+  position: absolute; /* Posiziona il menu sopra gli altri contenuti */
+  top: 60px; /* Posiziona il menu sotto il header */
+  left: 0;
+  width: 100%; /* Larghezza del menu */
+  background: white; /* Sfondo del menu */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Assicurati che il menu sia sopra altri contenuti */
+}
+
+.nav-menu.open {
+  display: flex; /* Mostra il menu quando è aperto */
+}
+
+/* Stile per i link del menu */
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link */
+.nav-menu a {
+  color: rgb(4 4 4 / 92%);
+  text-decoration: none;
+  font-size: 1.6em;
+  font-weight: 500;
+  padding: 0.5em 1em; /* Aggiungi padding per migliorare la cliccabilità */
+  display: block; /* Rendi i link a blocchi per coprire l'intera area */
+  transition: background 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background: #e0e0e0; /* Cambia colore di sfondo al passaggio del mouse */
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Imposta il layout in colonna su schermi piccoli */
+    align-items: flex-start; /* Allinea gli elementi a sinistra */
+  }
+
+  .header-logo {
+    margin-bottom: 0.5em; /* Aggiungi margine sotto il logo */
+  }
+
+  .nav-menu {
+    width: 100%; /* Larghezza del menu su schermi piccoli */
+  }
+
+  .header-logo h1 {
+    font-size: 1.5em; /* Dimensione del font per schermi più piccoli */
+  }
+
+  .nav-menu a {
+    font-size: 1.2em; /* Dimensione del font per i link */
+  }
+
+  .menu-button {
+    width: 30%; /* Pulsante occupa tutta la larghezza disponibile */
+    text-align: center; /* Centra il testo */
+    margin-top: -4.5em;
+  }
+}

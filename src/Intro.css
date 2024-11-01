@@ -1,0 +1,125 @@
+/* Intro.css */
+
+.intro {
+  position: relative;
+  height: 400px; /* Altezza di base */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+}
+
+.image-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-track img {
+  height: 100%;
+  min-width: 100%; /* Mantiene la larghezza minima dell'immagine */
+  object-fit: cover; /* Riempi il contenitore senza distorcere l'immagine */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.intro-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 2rem; /* Dimensione del testo */
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.intro h2 {
+  margin: 0;
+  font-size: 3rem; /* Dimensione del titolo */
+}
+
+.intro p {
+  margin-top: 10px;
+  font-size: 1.2rem; /* Dimensione del paragrafo */
+}
+
+.intro h2,
+.intro p {
+  font-family: 'Cursive', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Media Queries per adattare l'intro a schermi più piccoli */
+@media (max-width: 1024px) {
+  .intro {
+    height: 300px; /* Altezza per tablet */
+  }
+
+  .intro-text {
+    font-size: 1.5rem; /* Ridimensiona il testo */
+    padding: 15px; /* Riduci il padding */
+  }
+
+  .intro h2 {
+    font-size: 2.5rem; /* Ridimensiona il titolo */
+  }
+
+  .intro p {
+    font-size: 1rem; /* Ridimensiona il paragrafo */
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    height: 250px; /* Altezza per smartphone */
+  }
+
+  .intro-text {
+    font-size: 1.2rem; /* Riduci ulteriormente il testo */
+    padding: 10px; /* Riduci il padding */
+  }
+
+  .intro h2 {
+    font-size: 2rem; /* Riduci il titolo */
+  }
+
+  .intro p {
+    font-size: 0.9rem; /* Riduci il paragrafo */
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    height: 200px; /* Altezza per smartphone piccoli */
+  }
+
+  .intro-text {
+    font-size: 1rem; /* Dimensione testo per schermi molto piccoli */
+    padding: 8px; /* Riduci il padding */
+  }
+
+  .intro h2 {
+    font-size: 1.5rem; /* Dimensione titolo per schermi piccoli */
+  }
+
+  .intro p {
+    font-size: 0.8rem; /* Dimensione paragrafo per schermi piccoli */
+  }
+}

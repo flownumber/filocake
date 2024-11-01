@@ -1,0 +1,45 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+
+
+.intro {
+  padding: 2em 1em;
+  background-color: #fff;
+}
+
+
+.order {
+  padding: 2em 1em;
+  background-color: #fff;
+}
+
+.order-button {
+  padding: 0.5em 2em;
+  font-size: 1.2em;
+  color: white;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #ff1493;
+}
+
+.footer {
+  background-color: #ffb6c1;
+  color: white;
+  padding: 1em;
+  font-size: 0.9em;
+}

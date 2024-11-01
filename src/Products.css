@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Products.css */
+.products {
+  padding: 3em 1em;
+  background-color: #ffe6eb;
+}
+/* Products.css */
+
+.bg-bar-products {
+  background-image: url('/img/corne.jpg');
+}
+
+.bg-festive-cakes {
+  background-image: url('/img/torte.jpg');
+}
+
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+  gap: 20px;
+}
+
+.product {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8); /* Sfondato leggero per testi */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  width: 220px;
+  height: 220px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bar-products, .festive-cakes {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.4); /* Colore di sfondo scuro per contrasto */
+}
+
+/* Specific background images */
+.bar-products {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/corne.jpg');
+}
+
+.festive-cakes {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/torte.jpg');
+}
+
+.product h4,
+.product p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #fff; /* Colore chiaro per contrasto */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.product h4 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  
+}
+
+.product p {
+  font-size: 0.9em;
+  padding: 0 10px;
+}
+
