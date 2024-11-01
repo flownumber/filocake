@@ -53,7 +53,7 @@
   top: 6.5em; /* Posiziona il menu sotto il header */
   left: 0;
   width: 50%; /* Larghezza del menu */
-  background: linear-gradient(179deg, #94c6dfc9, #81edf3b3, #7cc3ed8a);
+  background: linear-gradient(179deg, #afdef5, #8bdadf, #9ccbe7);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000; /* Assicurati che il menu sia sopra altri contenuti */
   border-radius: 1em;
