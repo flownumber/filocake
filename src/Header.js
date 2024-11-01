@@ -14,7 +14,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-logo">
-        <Link to="/"> {/* Link alla homepage */}
+        <Link to="/filocake/"> {/* Link alla homepage */}
           <img src={logo} alt="Logo Filocake" className="logo-img" />
           <h1>Filocake</h1>
         </Link>
