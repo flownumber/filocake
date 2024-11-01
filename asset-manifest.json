@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/filocake/static/css/main.15972b01.css",
-    "main.js": "/filocake/static/js/main.93f28cc8.js",
+    "main.js": "/filocake/static/js/main.b3b2238d.js",
     "static/media/biscotti-senza-lattosio.jpg": "/filocake/static/media/biscotti-senza-lattosio.015a357309d826b18bff.jpg",
     "static/media/cioccolatini.jpg": "/filocake/static/media/cioccolatini.015a357309d826b18bff.jpg",
     "static/media/cioccolato-fondente.jpg": "/filocake/static/media/cioccolato-fondente.015a357309d826b18bff.jpg",
@@ -13,10 +13,10 @@
     "static/media/pandoro-natale.jpg": "/filocake/static/media/pandoro-natale.b5b03aaa5b8de67861c1.jpg",
     "index.html": "/filocake/index.html",
     "main.15972b01.css.map": "/filocake/static/css/main.15972b01.css.map",
-    "main.93f28cc8.js.map": "/filocake/static/js/main.93f28cc8.js.map"
+    "main.b3b2238d.js.map": "/filocake/static/js/main.b3b2238d.js.map"
   },
   "entrypoints": [
     "static/css/main.15972b01.css",
-    "static/js/main.93f28cc8.js"
+    "static/js/main.b3b2238d.js"
   ]
 }
