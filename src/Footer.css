@@ -15,6 +15,12 @@
   color: #2f2e87; /* Colore del testo */
   font-size: 21px; /* Dimensione del testo */
 }
+a {
+  color: #2033bb;
+  cursor: pointer;
+  vertical-align: baseline;
+  font-family: cursive;
+}
 
 /* Media Queries per adattare il footer a schermi più piccoli */
 @media (max-width: 768px) {
