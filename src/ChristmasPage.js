@@ -2,10 +2,14 @@
 import React from 'react';
 import './ChristmasPage.css';
 
+// Importa le immagini
+import panettoneClassicoImage from './img/panettone-classico.jpg';
+import pandoroNataleImage from './img/pandoro-natale.jpg';
+
 const ChristmasPage = () => {
   const christmasProducts = [
-    { id: 1, name: 'Panettone Classico', description: 'Tradizionale panettone natalizio.', price: '€25.00', image: 'img/panettone-classico.jpg' },
-    { id: 2, name: 'Pandoro di Natale', description: 'Delizioso pandoro decorato per le feste.', price: '€20.00', image: 'img/pandoro-natale.jpg' },
+    { id: 1, name: 'Panettone Classico', description: 'Tradizionale panettone natalizio.', price: '€25.00', image: panettoneClassicoImage },
+    { id: 2, name: 'Pandoro di Natale', description: 'Delizioso pandoro decorato per le feste.', price: '€20.00', image: pandoroNataleImage },
     // Aggiungi altri prodotti di Natale
   ];
 
