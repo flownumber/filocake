@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/filocake/static/css/main.a305d96e.css",
-    "main.js": "/filocake/static/js/main.5cff0c0b.js",
+    "main.css": "/filocake/static/css/main.41ba155f.css",
+    "main.js": "/filocake/static/js/main.7bfdf311.js",
     "static/media/biscotti-senza-lattosio.jpg": "/filocake/static/media/biscotti-senza-lattosio.015a357309d826b18bff.jpg",
     "static/media/cioccolatini.jpg": "/filocake/static/media/cioccolatini.015a357309d826b18bff.jpg",
     "static/media/cioccolato-fondente.jpg": "/filocake/static/media/cioccolato-fondente.015a357309d826b18bff.jpg",
@@ -12,11 +12,11 @@
     "static/media/torta-cioccolato.jpg": "/filocake/static/media/torta-cioccolato.70b731a845b3637febde.jpg",
     "static/media/pandoro-natale.jpg": "/filocake/static/media/pandoro-natale.b5b03aaa5b8de67861c1.jpg",
     "index.html": "/filocake/index.html",
-    "main.a305d96e.css.map": "/filocake/static/css/main.a305d96e.css.map",
-    "main.5cff0c0b.js.map": "/filocake/static/js/main.5cff0c0b.js.map"
+    "main.41ba155f.css.map": "/filocake/static/css/main.41ba155f.css.map",
+    "main.7bfdf311.js.map": "/filocake/static/js/main.7bfdf311.js.map"
   },
   "entrypoints": [
-    "static/css/main.a305d96e.css",
-    "static/js/main.5cff0c0b.js"
+    "static/css/main.41ba155f.css",
+    "static/js/main.7bfdf311.js"
   ]
 }
