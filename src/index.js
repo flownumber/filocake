@@ -1,12 +1,12 @@
 // index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Main from './Main'; // Importiamo Main.js come punto di entrata principale
+import ReactDOM from 'react-dom/client'; // Importa createRoot
+import Main from './Main'; // Importa Main
+import './index.css'; // Importa eventuali stili globali
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root')); // Crea il root
+root.render(
   <React.StrictMode>
-    <Main />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Main /> {/* Monta Main qui */}
+  </React.StrictMode>
 );
