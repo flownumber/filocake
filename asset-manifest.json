@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/filocake/static/css/main.d4925627.css",
+    "main.css": "/filocake/static/css/main.413f43c2.css",
     "main.js": "/filocake/static/js/main.95766f9a.js",
     "static/js/453.038a0ebf.chunk.js": "/filocake/static/js/453.038a0ebf.chunk.js",
     "static/media/logo.png": "/filocake/static/media/logo.8fb45d36366e93713360.png",
     "index.html": "/filocake/index.html",
-    "main.d4925627.css.map": "/filocake/static/css/main.d4925627.css.map",
+    "main.413f43c2.css.map": "/filocake/static/css/main.413f43c2.css.map",
     "main.95766f9a.js.map": "/filocake/static/js/main.95766f9a.js.map",
     "453.038a0ebf.chunk.js.map": "/filocake/static/js/453.038a0ebf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4925627.css",
+    "static/css/main.413f43c2.css",
     "static/js/main.95766f9a.js"
   ]
 }
